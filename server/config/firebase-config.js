@@ -1,6 +1,6 @@
 // server/config/firebase-config.js
 const admin = require('firebase-admin');
-const serviceAccount = require('./degen-hunter-76883-default-rtdb-export.json');
+const serviceAccount = require('./degen-hunter-76883-firebase-adminsdk-v84sm-44cd4faa4a.json');
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
