@@ -9,8 +9,5 @@
     "express": "^4.17.1",
     "cors": "^2.8.5",
     "firebase-admin": "^10.0.0"
-  },
-  "engines": {
-    "node": "16.x"
   }
 }
