@@ -8,7 +8,7 @@ async function fetchUserData() {
     }
 
     try {
-        const response = await fetch(`https://your-backend.vercel.app/api/getUserData?telegramId=${telegramId}`);
+        const response = await fetch(`https://bullsminiapp.vercel.app/api/getUserData?telegramId=${telegramId}`);
         if (!response.ok) {
             throw new Error("Failed to fetch user data");
         }
