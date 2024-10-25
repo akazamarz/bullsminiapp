@@ -1,4 +1,4 @@
-// firebase-config.js
+// use firebase-config.js
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
 import { getDatabase } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js';
 
