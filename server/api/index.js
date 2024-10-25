@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const db = require('./config/firebase-config.js');  // Ensure this path is correct
-const app = express();
+// Correct path to firebase-config.js
+const db = require('../config/firebase-config');
 
 // Enable CORS and JSON body parsing
 app.use(cors());
