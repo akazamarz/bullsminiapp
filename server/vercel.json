@@ -2,13 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.js",   // This is your Express.js entry point
+      "src": "api/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",      // All requests starting with `/api` will be routed to `api/index.js`
+      "src": "/api/(.*)",
       "dest": "/api/index.js"
     }
   ]
