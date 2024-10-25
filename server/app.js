@@ -1,7 +1,7 @@
 // server/app.js
 const express = require('express');
 const cors = require('cors');
-const db = require('./config/firebase-config');  // Firebase config file
+const db = require('./config/firebase-config.js');  // Firebase config file
 const app = express();
 
 app.use(cors());
