@@ -1,13 +1,11 @@
 {
   "name": "bullsminiapp",
   "version": "1.0.0",
-  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node api/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "cors": "^2.8.5",
     "firebase-admin": "^10.0.0"
   }
 }
