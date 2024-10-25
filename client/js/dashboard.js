@@ -1,5 +1,9 @@
 // client/js/dashboard.js
 
+document.addEventListener("DOMContentLoaded", () => {
+    fetchUserData();  // Call fetchUserData on page load
+});
+
 async function fetchUserData() {
     const telegramId = sessionStorage.getItem('telegram_id');
     if (!telegramId) {
@@ -13,6 +17,7 @@ async function fetchUserData() {
             throw new Error("Failed to fetch user data");
         }
         const userData = await response.json();
+        console.log("Fetched user data:", userData);  // For debugging
         updateDashboard(userData);
     } catch (error) {
         console.error("Error fetching user data:", error);
