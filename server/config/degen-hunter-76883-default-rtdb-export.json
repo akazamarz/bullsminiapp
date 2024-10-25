@@ -1,0 +1,23 @@
+{
+  "users": {
+    "12345678": {
+      "balance": 2276348,
+      "multiplier": 2,
+      "tickets": 2,
+      "username": "akazamarz"
+    },
+    "7819043151": {
+      "allows_write_to_pm": true,
+      "auth_date": "2024-10-24T06:33:12.853Z",
+      "balance": 4426,
+      "first_name": "Akazamarzdegreat",
+      "id": 7819043151,
+      "language_code": "en",
+      "lastClaimDate": "Thu Oct 24 2024",
+      "multiplier": "1.4",
+      "streak": 4,
+      "tickets": 2,
+      "username": "akazamarzdegreat"
+    }
+  }
+}
