@@ -1,8 +1,6 @@
-// server/api/index.js
 import express from 'express';
 import cors from 'cors';
-import { database } from '../config/firebase-config.js'; // Adjusted path
-import { ref, get } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js';
+import db from '../config/firebase-config.js'; // Adjusted path for Firebase Admin SDK
 
 const app = express();
 app.use(cors());
@@ -27,8 +25,9 @@ app.get('/api/getUserData', async (req, res) => {
     }
 
     try {
-        const userRef = ref(database, `users/${telegramId}`);
-        const snapshot = await get(userRef);
+        // Use Firebase Admin SDK's database reference
+        const userRef = db.ref(`users/${telegramId}`);
+        const snapshot = await userRef.get();
         
         if (!snapshot.exists()) {
             return res.status(404).json({ error: 'User not found' });
