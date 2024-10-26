@@ -1,7 +1,7 @@
 // server/api/index.js
 import express from 'express';
 import cors from 'cors';
-import { database } from './config/firebase-config.js';
+import { database } from '../config/firebase-config.js'; // Adjusted path
 import { ref, get } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js';
 
 const app = express();
